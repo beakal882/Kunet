@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kunet</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="/">Kunet</a>
+        <img src="{% static 'images/KUNET_logo.png' %}" alt="Kunet Logo" style="height:40px;">
+
+
+        <form method="GET" action="/search/">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+
+        <a href="/videos/">Videos</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <p>© 2026 Kunet</p>
+    </footer>
+
+</body>
+</html>
