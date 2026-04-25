@@ -1,6 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'home/base.html' %}
+
+{% block title %}Home{% endblock %}
 
 {% block content %}
-<h1>Welcome to Kunet</h1>
-<p>This is your homepage content.</p>
+    {% include 'home/components/hero.html' %}
 {% endblock %}
